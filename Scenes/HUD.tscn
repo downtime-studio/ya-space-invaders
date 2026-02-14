@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bku2yoy1j1ige"]
+
+[ext_resource type="Script" uid="uid://kiew7s82oh8g" path="res://Scripts/HUD.cs" id="1_sd512"]
+
+[node name="Hud" type="CanvasLayer" unique_id=1037532573]
+script = ExtResource("1_sd512")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=529993935]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 33.0
+
+[node name="MessagePanel" type="Panel" parent="." unique_id=1863995400]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -35.0
+offset_right = 134.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MessageLabel" type="Label" parent="MessagePanel" unique_id=2126319254]
+layout_mode = 0
+offset_right = 190.0
+offset_bottom = 23.0
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="RestartLabel" type="Label" parent="MessagePanel" unique_id=612035600]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 74.0
+offset_right = 173.0
+offset_bottom = 97.0
+text = "Press \"R\" to Restart"
+horizontal_alignment = 1
+vertical_alignment = 2

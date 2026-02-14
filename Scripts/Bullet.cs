@@ -23,11 +23,9 @@ public partial class Bullet : Area2D
 
 	private void OnAreaEntered(Area2D other)
 	{
-		// If it hit an enemy, remove enemy and bullet
-		if (other.IsInGroup("enemies"))
-		{
-			other.QueueFree();
-			QueueFree();
-		}
+		if (other is not Enemy enemy) return;
+		
+		enemy.Die();
+		QueueFree();
 	}
 }
