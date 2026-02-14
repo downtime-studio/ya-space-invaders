@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://qmgo23bjrl70"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fd37"]
+
+[node name="Enemy" type="Area2D" unique_id=1306074427 groups=["enemies"]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=829398060]
+shape = SubResource("RectangleShape2D_7fd37")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=816983367]
+color = Color(0.21824288, 0.608722, 0.29003024, 1)
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)

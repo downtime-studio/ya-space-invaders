@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cor834tiwtxmf"]
+
+[ext_resource type="Script" uid="uid://kiksekj7t02r" path="res://Scripts/Bullet.cs" id="1_vlxeq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nr8tw"]
+
+[node name="Bullet" type="Area2D" unique_id=2003748816]
+collision_mask = 2
+script = ExtResource("1_vlxeq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2133463926]
+shape = SubResource("RectangleShape2D_nr8tw")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=825605612]
+scale = Vector2(0.5, 0.5)
+color = Color(0.81796193, 0.08466966, 0.17453471, 1)
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)

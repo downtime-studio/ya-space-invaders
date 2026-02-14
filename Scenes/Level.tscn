@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ckpb8llbfluri"]
+
+[ext_resource type="PackedScene" uid="uid://cin3373yucl1w" path="res://Scenes/Player.tscn" id="1_0ba56"]
+[ext_resource type="Script" uid="uid://cy7o6lsmjfh4g" path="res://Scripts/Level.cs" id="1_vsvp5"]
+[ext_resource type="PackedScene" uid="uid://qmgo23bjrl70" path="res://Scenes/Enemy.tscn" id="2_8rbpu"]
+
+[node name="Level" type="Node2D" unique_id=661649157]
+script = ExtResource("1_vsvp5")
+EnemyScene = ExtResource("2_8rbpu")
+EnemiesContainerPath = NodePath("Enemy")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1812099493]
+
+[node name="CharacterBody2D" parent="." unique_id=2000413684 instance=ExtResource("1_0ba56")]
+position = Vector2(0, 520)
+
+[node name="Enemy" parent="." unique_id=1306074427 instance=ExtResource("2_8rbpu")]

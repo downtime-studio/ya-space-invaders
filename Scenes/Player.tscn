@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cin3373yucl1w"]
+
+[ext_resource type="Script" uid="uid://f1h3oyh6uktt" path="res://Scripts/Player.cs" id="1_rpqav"]
+[ext_resource type="PackedScene" uid="uid://cor834tiwtxmf" path="res://Scenes/Bullet.tscn" id="2_kyqiw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbkls"]
+
+[node name="Player" type="CharacterBody2D" unique_id=2000413684]
+script = ExtResource("1_rpqav")
+BulletScene = ExtResource("2_kyqiw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1597778372]
+shape = SubResource("RectangleShape2D_qbkls")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=2145811256]
+polygon = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=481658051]
+position = Vector2(0, -10)
