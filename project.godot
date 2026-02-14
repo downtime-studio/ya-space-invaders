@@ -22,7 +22,7 @@ window/size/viewport_height=640
 
 [dotnet]
 
-project/assembly_name="DodgeTheSquares"
+project/assembly_name="YASpaceInvaders"
 
 [global_group]
 

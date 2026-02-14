@@ -1,6 +1,5 @@
 using Godot;
 
-namespace DodgeTheSquares.Scripts;
 
 public partial class Player : CharacterBody2D
 {
